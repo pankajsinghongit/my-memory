@@ -20,8 +20,13 @@ A structured note-taking and knowledge management system designed to help you or
 remember/
 ├── README.md                      # This file - project documentation
 ├── personal-memory-index.md       # Complete index of all folders/files in personal-memory
+├── personal-memory-mgmt-rule.md   # Rules and guidelines for managing your knowledge base
+├── processed-inbox-audit/         # Monthly archives of processed inbox items
+│   ├── 2026-02-processed-inbox-audit.md  # February 2026 processed items
+│   ├── 2026-03-processed-inbox-audit.md  # March 2026 processed items
+│   └── ...                        # One file per month
 └── personal-memory/               # Root folder for all personal knowledge
-    ├── inbox.md                  # Temporary holding area for unorganized information
+    ├── inbox.md                  # Temporary holding area for unprocessed information
     ├── topics/                   # Organized by subject matter (optional)
     ├── projects/                 # Project-specific notes (optional)
     ├── learnings/                # Daily learnings and insights (optional)
@@ -54,6 +59,19 @@ The `personal-memory/inbox.md` file serves as a **capture-first, organize-later*
 4. **Clean** → Keep the inbox empty or minimal
 
 This follows the GTD (Getting Things Done) principle of separating capture from organization.
+
+### Management Rules
+
+The `personal-memory-mgmt-rule.md` file contains your personal rules and guidelines for managing your knowledge base. This is where you define:
+
+- **Inbox Processing Schedule**: When and how you review and organize captured information
+- **Organization Rules**: How you structure and categorize different types of information
+- **Naming Conventions**: File and folder naming standards
+- **Content Guidelines**: Note structure and quality standards
+- **Maintenance Schedule**: Daily, weekly, monthly, and quarterly routines
+- **Custom Workflows**: Specific processes for learning, projects, and other activities
+
+This file is customizable to your preferences and can evolve as you refine your system. See the file for a comprehensive template to get started.
 
 ### Index File
 
@@ -99,13 +117,15 @@ Or create organized notes directly:
 echo "# My First Note" > personal-memory/topics/technology/coding-tips.md
 ```
 
-### 4. Regular Inbox Processing
+### 4. Define Your Management Rules
 
-Set aside time (e.g., every evening or weekend) to:
-- Review items in `inbox.md`
-- Create proper notes in appropriate folders
-- Update `personal-memory-index.md` if you added new folders
-- Clear processed items from the inbox
+Review and customize `personal-memory-mgmt-rule.md` to define:
+- Your inbox processing schedule
+- Organization preferences
+- Naming conventions
+- Custom workflows
+
+See [Management Rules](#management-rules) section for details.
 
 ## 💡 Recommended Folder Structure Examples
 
