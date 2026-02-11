@@ -1,0 +1,1 @@
+Follow the directions provided in AGENTS.md
