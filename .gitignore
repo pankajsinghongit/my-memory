@@ -1,0 +1,19 @@
+# IDE and Editor Files
+.history/
+.vscode/
+.idea/
+
+# Note-taking App Folders
+.obsidian/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+*~
+
+# Log Files
+*.log
