@@ -14,7 +14,8 @@ This file provides a **complete map of what information is stored where** in you
 1. **Find a Topic**: Scan the directory structure to see where information is stored
 2. **Browse Categories**: Review main categories to understand your knowledge domains
 3. **Plan New Notes**: See where new information should fit
-4. **Identify Gaps**: Notice areas where you haven't documented much yet
+4. **Understand Growth**: See how folders can evolve from simple to multi-level as content grows
+5. **Identify Gaps**: Notice areas where you haven't documented much yet
 
 ## Maintaining This Index
 
@@ -23,6 +24,7 @@ Update this index when you:
 - Add new folders or categories
 - Reorganize existing structure
 - Remove outdated folders
+- Break up large files into multi-level folder structures
 - Complete a significant inbox processing session
 
 ### How to Update
@@ -39,20 +41,38 @@ tree personal-memory/ -L 3 --dirsfirst
 find personal-memory/ -type d | sort
 ```
 
+## Organization Philosophy
+
+**Multi-Level Hierarchy**: Personal memory supports flexible multi-level folder organization
+- Start simple with 1-2 levels for new topics
+- Deepen the hierarchy as content grows naturally  
+- Aim for 3-5 levels maximum for maintainability
+- When a file grows beyond ~500 lines, consider breaking it into a folder structure
+
+**Evolution Example**:
+```
+Initial:     python-notes.md
+Growing:     python/ → python/basics.md, python/advanced.md
+Mature:      python/ → python/basics/, python/frameworks/, python/advanced/
+```
+
 ---
 
 ## Directory Structure
 
-**Last Updated**: February 11, 2026 12:05 PM
+**Last Updated**: February 11, 2026 4:54 PM
 
 ```
 personal-memory/
 ├── inbox.md                        # Unprocessed information waiting to be organized
 ├── bookmarks/                      # Bookmarks and saved links
+│   ├── tools-bookmarks.md         # Tools and productivity application bookmarks
 │   └── work-bookmarks.md          # Work-related bookmarks and project links
 ├── identity/                       # Personal identity and profile information
 │   └── personal-info.md           # Personal information (PAN, family details)
 └── where-is-my-stuff/             # Location tracking and item organization
+
+Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 ```
 
 ## Content Overview
@@ -61,13 +81,14 @@ personal-memory/
 **What's Here**: Saved links, articles, resources
 **Purpose**: Collection of useful web resources and references
 **Files**:
+- `tools-bookmarks.md` - Tools and productivity applications (Obsidian)
 - `work-bookmarks.md` - Work-related bookmarks including project documents (DLS Virtual Assistant PRFAQ)
 
 ### identity
 **What's Here**: Personal identity information, profiles, documentation
 **Purpose**: Personal information and identity management
 **Files**:
-- `personal-info.md` - Official documents (PAN) and family information (spouse name)
+- `personal-info.md` - Official documents (PAN, Passport) and family information (spouse name)
 
 ### where-is-my-stuff
 **What's Here**: Item locations, organization system
@@ -75,10 +96,11 @@ personal-memory/
 
 ## Summary Statistics
 
-- **Last Updated**: February 11, 2026 12:05 PM
+- **Last Updated**: February 11, 2026 4:54 PM
 - **Total Folders**: 3
-- **Total Files**: 3 (inbox.md + 2 content files)
+- **Total Files**: 4 (inbox.md + 3 content files)
 - **Inbox Status**: ✅ Empty (all items processed)
+- **Organization**: Currently flat structure (0-1 levels), can grow to 3-5 levels as needed
 
 ---
 
@@ -88,6 +110,7 @@ personal-memory/
 - Add descriptions for each folder as content grows
 - Review this index when processing your inbox
 - Keep folder descriptions current and accurate
+- When files grow large (~500 lines), consider breaking them into subfolders
 
 ---
 

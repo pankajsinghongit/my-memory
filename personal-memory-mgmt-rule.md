@@ -27,10 +27,28 @@ Define how you organize different types of information:
 - `reference/` - Quick reference materials and checklists
 
 ### Categorization Principles
-- [ ] Keep folder depth to maximum 3-4 levels
-- [ ] Create new top-level folders only when you have 5+ related items
-- [ ] Use singular names for folders (e.g., `project/` not `projects/`)
-- [ ] Group by topic first, then by time or project
+- **Multi-level hierarchy**: Personal memory supports flexible multi-level folder organization
+  - Start simple with 1-2 levels for new topics
+  - Deepen the hierarchy as content grows naturally
+  - No strict limit, but aim for 3-5 levels maximum for maintainability
+- **File growth management**: Monitor file sizes and complexity
+  - If a file grows beyond ~500 lines or covers multiple subtopics, consider breaking it up
+  - Create a folder with the same name as the original file
+  - Move the original file content into multiple focused files within the new folder
+  - Add an `overview.md` or `README.md` in the new folder to tie concepts together
+- **When to create folders**:
+  - You have 5+ related items on the same topic
+  - A single file is becoming too large or complex
+  - Content naturally divides into clear subtopics
+  - You need better organization for a growing area
+- **Naming conventions**:
+  - Use singular names for folders (e.g., `project/` not `projects/`)
+  - Group by topic first, then by time or project
+- **Evolution example**:
+  ```
+  python-notes.md → python/ → python/basics/, python/advanced/, python/frameworks/
+  ```
+  Start with a single file, create a folder when it grows, then add subfolders as needed
 
 ---
 
@@ -85,7 +103,7 @@ Define when you review and organize your inbox:
    - Use the current year-month for the filename (e.g., `processed-inbox-audit/2026-02-processed-inbox-audit.md` for February 2026)
    - Create the `processed-inbox-audit/` folder if it doesn't exist
    - Add `**Processed**: [YYYY-MM-DD HH:MM]` timestamp immediately after the heading
-   - Add `**Moved to`: path/to/file.md` reference on the next line
+   - Add `**Moved to**: path/to/file.md` reference on the next line
    - Keep all original content exactly as it was
    - Delete the entry from `inbox.md`
 5. **Update** `personal-memory-index.md` if you added new folders
@@ -286,6 +304,7 @@ Define any special handling for certain types of information:
 Track changes to your management rules:
 
 - **2026-02-11**: Initial creation of management rules
+- **2026-02-11**: Updated to support multi-level hierarchy and file growth management
 - Add your updates here as you refine your system
 
 ---

@@ -8,6 +8,10 @@
 ### PAN Number
 - **PAN**: CSDGS8675r
 
+### Passport Number
+- **Passport**: TSO7EM4363
+- **Image**: https://pansingh.in/passport-pankaj.jpg
+
 ## Family
 
 ### Spouse

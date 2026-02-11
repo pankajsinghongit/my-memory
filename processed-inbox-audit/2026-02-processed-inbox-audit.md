@@ -19,3 +19,25 @@ PAN Number: CSDGS8675r
 **Moved to**: personal-memory/identity/personal-info.md
 
 Wife's name: Vyakhya
+
+## [2026-02-11 16:13] Passport Number
+**Processed**: 2026-02-11 16:15
+**Moved to**: personal-memory/identity/personal-info.md
+
+Passport Number: TSO7EM4363
+
+## [2026-02-11 16:18] Obsidian - Knowledge Management Tool
+**Processed**: 2026-02-11 16:20
+**Moved to**: personal-memory/bookmarks/tools-bookmarks.md
+
+Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files. A personal knowledge management and note-taking application.
+
+Source: https://obsidian.md/
+
+## [2026-02-11 16:28] Passport Image Location
+**Processed**: 2026-02-11 16:29
+**Moved to**: personal-memory/identity/personal-info.md
+
+Passport image stored online at personal website.
+
+Source: https://pansingh.in/passport-pankaj.jpg
