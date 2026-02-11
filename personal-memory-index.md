@@ -70,7 +70,9 @@ personal-memory/
 │   └── work-bookmarks.md          # Work-related bookmarks and project links
 ├── identity/                       # Personal identity and profile information
 │   └── personal-info.md           # Personal information (PAN, family details)
-└── where-is-my-stuff/             # Location tracking and item organization
+├── where-is-my-stuff/             # Location tracking and item organization
+└── work-contribution/             # Work contributions and achievements
+    └── overview.md                # Summary of work contributions and career milestones
 
 Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 ```
@@ -94,11 +96,17 @@ Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 **What's Here**: Item locations, organization system
 **Purpose**: Track where physical or digital items are stored
 
+### work-contribution
+**What's Here**: Work contributions, achievements, and career milestones
+**Purpose**: Track professional accomplishments, project impacts, and career documentation for performance reviews and portfolio building
+**Files**:
+- `overview.md` - Template and guidelines for documenting work contributions
+
 ## Summary Statistics
 
-- **Last Updated**: February 11, 2026 4:54 PM
-- **Total Folders**: 3
-- **Total Files**: 4 (inbox.md + 3 content files)
+- **Last Updated**: February 11, 2026 8:21 PM
+- **Total Folders**: 4
+- **Total Files**: 5 (inbox.md + 4 content files)
 - **Inbox Status**: ✅ Empty (all items processed)
 - **Organization**: Currently flat structure (0-1 levels), can grow to 3-5 levels as needed
 

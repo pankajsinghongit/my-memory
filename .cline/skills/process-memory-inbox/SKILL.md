@@ -104,6 +104,7 @@ For each inbox entry, follow this decision process:
      - `bookmarks/` - URLs, links, web resources
      - `identity/` - Personal information, documents, family
      - `where-is-my-stuff/` - Item locations, organization
+     - `work-contribution/` - Work achievements, project impacts, career milestones
    - Look for topic-specific folders that match the inbox item
    - Consider multi-level folders (e.g., `technology/python/` for Python notes)
 
@@ -338,13 +339,44 @@ Provide a summary after all items are processed:
 - Or add to existing learning/technology folders
 - Include sources and references
 
-### Case 6: Unclear Destination
+### Case 6: Work Contributions and Achievements
+**Example**: Project accomplishments, performance highlights, career milestones, work achievements
+
+**Action:**
+- Store in `personal-memory/work-contribution/overview.md`
+- Or create separate files for major projects: `personal-memory/work-contribution/project-name.md`
+- Follow the template format with Role, Duration, Description, Key Contributions, Impact, Technologies/Skills, Metrics
+- Include:
+  - Project/initiative name
+  - Time period (start/end dates or quarter/year)
+  - Role and responsibilities
+  - Key contributions and accomplishments
+  - Measurable impact and outcomes
+  - Technologies and skills used
+  - Metrics and results (if available)
+- Link to related work bookmarks if applicable
+- Organize by:
+  - Project/initiative (for major projects)
+  - Time period (for regular updates)
+  - Impact area (technical, leadership, innovation)
+
+**When to Create Separate Files:**
+- Major projects with significant contributions
+- Quarterly/yearly summary files (e.g., `2026-q1-contributions.md`)
+- Specific initiatives that warrant detailed documentation
+
+**When to Add to overview.md:**
+- Smaller achievements
+- Quick updates
+- When just starting to track contributions
+
+### Case 7: Unclear Destination
 **Action:**
 - Ask user for clarification using `ask_followup_question`
 - Don't guess if impact is significant
 - Offer suggestions for where it could go
 
-### Case 7: Large File Reorganization
+### Case 8: Large File Reorganization
 **Example**: File has grown to 600+ lines and covers multiple subtopics
 
 **Action:**
@@ -415,6 +447,14 @@ PAN Number: CSDGS8675r
 ## [2026-02-11 12:03] Wife's Name
 
 Wife's name: Vyakhya
+
+## [2026-02-11 14:30] Launched Memory Management System
+
+Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
+
+**Impact**: Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information.
+
+**Technologies**: Markdown, Git, MCP Skills, Cline AI
 ```
 
 ### Processing Actions (One by One):
@@ -434,6 +474,12 @@ Wife's name: Vyakhya
 **Item 3: Wife's Name**
 - Decision: Family information
 - Action: Add to `personal-memory/identity/personal-info.md`
+- Archive to: `processed-inbox-audit/2026-02-processed-inbox-audit.md`
+- **Continue to next item**
+
+**Item 4: Launched Memory Management System**
+- Decision: Work contribution → achievement
+- Action: Add to `personal-memory/work-contribution/overview.md`
 - Archive to: `processed-inbox-audit/2026-02-processed-inbox-audit.md`
 - **All items processed**
 
@@ -477,6 +523,50 @@ Wife's name: Vyakhya
 - **Name**: Vyakhya
 ```
 
+**personal-memory/work-contribution/overview.md:**
+```markdown
+# Work Contribution Summary
+
+**Created**: 2026-02-11
+**Last Updated**: 2026-02-11
+**Tags**: #work #contribution #achievements
+
+## Summary
+This document tracks summaries of work contributions...
+
+## Contributions
+
+### Memory Management System - February 2026
+
+**Role**: Designer & Implementer
+**Duration**: 2026-02-11
+
+**Description**:
+Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
+
+**Key Contributions**:
+- Designed complete inbox processing workflow
+- Implemented automated organization system
+- Created comprehensive audit trail mechanism
+- Built flexible multi-level folder structure
+
+**Impact**:
+- Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information
+
+**Technologies/Skills**:
+- Markdown
+- Git
+- MCP Skills
+- Cline AI
+
+---
+
+## Yearly Summaries
+
+### 2026
+*Add summary of 2026 contributions here*
+```
+
 **processed-inbox-audit/2026-02-processed-inbox-audit.md:**
 ```markdown
 # Processed Inbox Audit - February 2026
@@ -500,12 +590,23 @@ PAN Number: CSDGS8675r
 **Moved to**: personal-memory/identity/personal-info.md
 
 Wife's name: Vyakhya
+
+## [2026-02-11 14:30] Launched Memory Management System
+**Processed**: 2026-02-11 14:35
+**Moved to**: personal-memory/work-contribution/overview.md
+
+Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
+
+**Impact**: Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information.
+
+**Technologies**: Markdown, Git, MCP Skills, Cline AI
 ```
 
 **User is informed:**
-- "Processed 3 items successfully"
+- "Processed 4 items successfully"
 - "Created/updated: personal-memory/bookmarks/work-bookmarks.md"
 - "Created/updated: personal-memory/identity/personal-info.md"
+- "Created/updated: personal-memory/work-contribution/overview.md"
 - "Inbox is now empty"
 - "All items have been archived to processed-inbox-audit/2026-02-processed-inbox-audit.md"
 
