@@ -91,7 +91,7 @@ For each inbox entry, follow this decision process:
 
 **File Size Consideration:**
 - If adding to an existing file, check if it's becoming too large (~500 lines)
-- If the file is growing large or covering too many subtopics, consider breaking it up (see "Case 7: Large File Reorganization")
+- If the file is growing large or covering too many subtopics, consider breaking it up
 
 #### B. Decide the Destination
 
@@ -100,18 +100,13 @@ For each inbox entry, follow this decision process:
 1. **Check if a relevant folder exists** (refer to personal-memory-index.md):
    - Review the "Directory Structure" section in personal-memory-index.md
    - Check the "Content Overview" to understand what each folder contains
-   - Common folders include:
-     - `bookmarks/` - URLs, links, web resources
-     - `identity/` - Personal information, documents, family
-     - `where-is-my-stuff/` - Item locations, organization
-     - `work-contribution/` - Work achievements, project impacts, career milestones
    - Look for topic-specific folders that match the inbox item
    - Consider multi-level folders (e.g., `technology/python/` for Python notes)
 
 2. **Check if a relevant file exists in that folder:**
    - If yes → Add to existing file
    - If no → Create new file
-   - If file is becoming too large, consider breaking it up (see Case 7 below)
+   - If file is becoming too large, consider breaking it up
 
 3. **If no relevant folder exists:**
    - Is this a new major category (5+ future items expected)?
@@ -123,10 +118,6 @@ For each inbox entry, follow this decision process:
 - You can create subfolders within existing folders as content grows
 - Example progression: `technology/` → `technology/python/` → `technology/python/frameworks/`
 - Start simple, deepen hierarchy as needed
-
-**File Growth Management:**
-- If a destination file is growing beyond ~500 lines or covers multiple subtopics, consider breaking it up
-- See "Case 7: Large File Reorganization" in Special Processing Cases for guidance
 
 **Naming Guidelines:**
 - Files: `lowercase-with-hyphens.md`
@@ -178,7 +169,7 @@ Brief description of what this note contains.
 
 #### D. File Growth Management (Optional During Processing)
 
-If you notice a file is becoming too large or complex during processing, you can proactively reorganize it:
+If you notice a file is becoming too large or complex during processing, you can proactively reorganize it.
 
 **When to Consider:**
 - File exceeds ~500 lines
@@ -186,47 +177,19 @@ If you notice a file is becoming too large or complex during processing, you can
 - Related inbox items suggest a growing area
 - File structure is becoming hard to navigate
 
-**How to Break Up a File:**
+**Quick Action:**
+- Note it for reorganization during monthly maintenance, OR
+- Reorganize proactively if it's clearly needed
 
-1. **Create a folder** with the same name as the file:
-   - Example: `python-notes.md` → `python/` folder
+**For detailed instructions on breaking up large files, see [docs/file-reorganization.md](./docs/file-reorganization.md)**
 
-2. **Move content** into multiple focused files:
-   - Example: `python/basics.md`, `python/advanced.md`, `python/frameworks.md`
-
-3. **Add an overview file**:
-   - Create `python/overview.md` or `python/README.md`
-   - Link to the other files
-   - Provide a summary of the topic
-
-4. **Update references**:
-   - Check if other files link to the old file
-   - Update links to point to new locations
-
-5. **Archive the old file** (optional):
-   - You can keep it for reference or delete it
-
-**Example:**
-```markdown
-Before:
-personal-memory/
-└── python-notes.md (600 lines, covering basics, async, web frameworks)
-
-After:
-personal-memory/
-└── python/
-    ├── overview.md          # Links to other files, provides summary
-    ├── basics.md            # Core Python concepts
-    ├── async-programming.md # Async/await patterns
-    └── web-frameworks.md    # Django, Flask, etc.
-```
-
-**Note:** This step is optional during inbox processing. You can:
-- Reorganize proactively if you see the need
-- Or note it for future reorganization during monthly maintenance
-- Or continue adding to large files and reorganize later
-
-Use your judgment based on the content and user's needs.
+This guide covers:
+- Step-by-step reorganization process
+- Creating folder structures from single files
+- Adding overview files for navigation
+- Updating references and links
+- Common reorganization patterns
+- When to (and not to) reorganize
 
 ### 4. Archive to Processed Inbox Audit
 
@@ -297,105 +260,14 @@ Provide a summary after all items are processed:
 - Current inbox status (how many items remain)
 - Any follow-up actions needed
 
-## Special Processing Cases
+## Scenario-Specific Processing
 
-### Case 1: Sensitive Personal Information
-**Example**: PAN numbers, passwords, Aadhaar
+For detailed instructions on processing specific types of information, refer to these guides:
 
-**Action:**
-- Store in `personal-memory/identity/personal-info.md` or similar secure location
-- Use appropriate section headers
-- Consider if it needs encryption (discuss with user)
-
-### Case 2: Web Bookmarks and URLs
-**Example**: PRFAQs, documentation links, articles
-
-**Action:**
-- Store in `personal-memory/bookmarks/`
-- Organize by category (work-bookmarks.md, learning-bookmarks.md, etc.)
-- Include URL in content with context
-
-### Case 3: Family/Personal Information
-**Example**: Family names, birthdays, contacts
-
-**Action:**
-- Store in `personal-memory/identity/`
-- Create sections for different types (Family, Contacts, etc.)
-- Keep organized and searchable
-
-### Case 4: Ideas and Projects
-**Example**: Ideas marked with 💡
-
-**Action:**
-- Consider creating `personal-memory/ideas/` if many exist
-- Or add to `personal-memory/projects/`
-- Preserve the emoji marker and next actions
-
-### Case 5: Learning Notes
-**Example**: Tutorial notes, course materials
-
-**Action:**
-- Create topic-specific folders if needed
-- Or add to existing learning/technology folders
-- Include sources and references
-
-### Case 6: Work Contributions and Achievements
-**Example**: Project accomplishments, performance highlights, career milestones, work achievements
-
-**Action:**
-- Store in `personal-memory/work-contribution/overview.md`
-- Or create separate files for major projects: `personal-memory/work-contribution/project-name.md`
-- Follow the template format with Role, Duration, Description, Key Contributions, Impact, Technologies/Skills, Metrics
-- Include:
-  - Project/initiative name
-  - Time period (start/end dates or quarter/year)
-  - Role and responsibilities
-  - Key contributions and accomplishments
-  - Measurable impact and outcomes
-  - Technologies and skills used
-  - Metrics and results (if available)
-- Link to related work bookmarks if applicable
-- Organize by:
-  - Project/initiative (for major projects)
-  - Time period (for regular updates)
-  - Impact area (technical, leadership, innovation)
-
-**When to Create Separate Files:**
-- Major projects with significant contributions
-- Quarterly/yearly summary files (e.g., `2026-q1-contributions.md`)
-- Specific initiatives that warrant detailed documentation
-
-**When to Add to overview.md:**
-- Smaller achievements
-- Quick updates
-- When just starting to track contributions
-
-### Case 7: Unclear Destination
-**Action:**
-- Ask user for clarification using `ask_followup_question`
-- Don't guess if impact is significant
-- Offer suggestions for where it could go
-
-### Case 8: Large File Reorganization
-**Example**: File has grown to 600+ lines and covers multiple subtopics
-
-**Action:**
-- **Proactive Approach** (during processing):
-  - Create a folder to replace the file
-  - Break content into focused files within the folder
-  - Add overview.md to tie concepts together
-  - Update personal-memory-index.md
-  - Inform user of the reorganization
-
-- **Deferred Approach**:
-  - Continue adding to the file
-  - Note in processing summary that reorganization may be helpful
-  - User can reorganize during monthly maintenance
-
-**Example:**
-- File: `technology/python-notes.md` (600 lines)
-- Reorganize to: `technology/python/` folder with multiple files
-- Add: `technology/python/overview.md` as entry point
+- **[Web Bookmarks & URLs](./docs/bookmarks.md)** - PRFAQs, documentation, articles
+- **[Work Contributions](./docs/work-contribution.md)** - Achievements, projects, career milestones
+- **[Personal & Identity Info](./docs/identity.md)** - Documents, family info, contacts
+- **[File Reorganization](./docs/file-reorganization.md)** - Breaking up large files into organized folder structures
 
 ## Quality Checklist
 
@@ -425,190 +297,6 @@ Before completing inbox processing, verify:
 - [ ] All processed items archived with metadata
 - [ ] Timestamps accurate
 - [ ] "Moved to" paths accurate and complete
-
-## Example Processing Session
-
-### Before Processing:
-
-**inbox.md:**
-```markdown
-# Inbox
-
-## [2026-02-11 12:01] DLS Virtual Assistant PRFAQ
-
-Amazon WorkDocs document containing the PRFAQ for DLS Virtual Assistant.
-
-Source: https://amazon.awsapps.com/workdocs-amazon/...
-
-## [2026-02-11 12:02] PAN Number
-
-PAN Number: CSDGS8675r
-
-## [2026-02-11 12:03] Wife's Name
-
-Wife's name: Vyakhya
-
-## [2026-02-11 14:30] Launched Memory Management System
-
-Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
-
-**Impact**: Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information.
-
-**Technologies**: Markdown, Git, MCP Skills, Cline AI
-```
-
-### Processing Actions (One by One):
-
-**Item 1: DLS Virtual Assistant PRFAQ**
-- Decision: Bookmark → work-related
-- Action: Create/update `personal-memory/bookmarks/work-bookmarks.md`
-- Archive to: `processed-inbox-audit/2026-02-processed-inbox-audit.md`
-- **Continue to next item**
-
-**Item 2: PAN Number**
-- Decision: Personal identity information
-- Action: Create/update `personal-memory/identity/personal-info.md`
-- Archive to: `processed-inbox-audit/2026-02-processed-inbox-audit.md`
-- **Continue to next item**
-
-**Item 3: Wife's Name**
-- Decision: Family information
-- Action: Add to `personal-memory/identity/personal-info.md`
-- Archive to: `processed-inbox-audit/2026-02-processed-inbox-audit.md`
-- **Continue to next item**
-
-**Item 4: Launched Memory Management System**
-- Decision: Work contribution → achievement
-- Action: Add to `personal-memory/work-contribution/overview.md`
-- Archive to: `processed-inbox-audit/2026-02-processed-inbox-audit.md`
-- **All items processed**
-
-### After Processing (All Items):
-
-**inbox.md:**
-```markdown
-# Inbox
-```
-
-**personal-memory/bookmarks/work-bookmarks.md:**
-```markdown
-# Work Bookmarks
-
-**Created**: 2026-02-11
-**Last Updated**: 2026-02-11
-
-## Projects & Documents
-
-### DLS Virtual Assistant
-- **PRFAQ Document**: [WorkDocs Link](https://amazon.aws...)
-  - Press Release and FAQ for DLS Virtual Assistant project
-  - **Added**: 2026-02-11
-```
-
-**personal-memory/identity/personal-info.md:**
-```markdown
-# Personal Information
-
-**Created**: 2026-02-11
-**Last Updated**: 2026-02-11
-
-## Official Documents
-
-### PAN Number
-- **PAN**: CSDGS8675r
-
-## Family
-
-### Spouse
-- **Name**: Vyakhya
-```
-
-**personal-memory/work-contribution/overview.md:**
-```markdown
-# Work Contribution Summary
-
-**Created**: 2026-02-11
-**Last Updated**: 2026-02-11
-**Tags**: #work #contribution #achievements
-
-## Summary
-This document tracks summaries of work contributions...
-
-## Contributions
-
-### Memory Management System - February 2026
-
-**Role**: Designer & Implementer
-**Duration**: 2026-02-11
-
-**Description**:
-Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
-
-**Key Contributions**:
-- Designed complete inbox processing workflow
-- Implemented automated organization system
-- Created comprehensive audit trail mechanism
-- Built flexible multi-level folder structure
-
-**Impact**:
-- Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information
-
-**Technologies/Skills**:
-- Markdown
-- Git
-- MCP Skills
-- Cline AI
-
----
-
-## Yearly Summaries
-
-### 2026
-*Add summary of 2026 contributions here*
-```
-
-**processed-inbox-audit/2026-02-processed-inbox-audit.md:**
-```markdown
-# Processed Inbox Audit - February 2026
-
-## [2026-02-11 12:01] DLS Virtual Assistant PRFAQ
-**Processed**: 2026-02-11 12:05
-**Moved to**: personal-memory/bookmarks/work-bookmarks.md
-
-Amazon WorkDocs document containing the PRFAQ for DLS Virtual Assistant.
-
-Source: https://amazon.awsapps.com/workdocs-amazon/...
-
-## [2026-02-11 12:02] PAN Number
-**Processed**: 2026-02-11 12:06
-**Moved to**: personal-memory/identity/personal-info.md
-
-PAN Number: CSDGS8675r
-
-## [2026-02-11 12:03] Wife's Name
-**Processed**: 2026-02-11 12:07
-**Moved to**: personal-memory/identity/personal-info.md
-
-Wife's name: Vyakhya
-
-## [2026-02-11 14:30] Launched Memory Management System
-**Processed**: 2026-02-11 14:35
-**Moved to**: personal-memory/work-contribution/overview.md
-
-Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
-
-**Impact**: Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information.
-
-**Technologies**: Markdown, Git, MCP Skills, Cline AI
-```
-
-**User is informed:**
-- "Processed 4 items successfully"
-- "Created/updated: personal-memory/bookmarks/work-bookmarks.md"
-- "Created/updated: personal-memory/identity/personal-info.md"
-- "Created/updated: personal-memory/work-contribution/overview.md"
-- "Inbox is now empty"
-- "All items have been archived to processed-inbox-audit/2026-02-processed-inbox-audit.md"
 
 ## Important Reminders
 
