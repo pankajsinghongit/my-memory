@@ -60,7 +60,7 @@ Mature:      python/ → python/basics/, python/frameworks/, python/advanced/
 
 ## Directory Structure
 
-**Last Updated**: February 11, 2026 4:54 PM
+**Last Updated**: February 17, 2026 5:57 PM
 
 ```
 personal-memory/
@@ -70,6 +70,10 @@ personal-memory/
 │   └── work-bookmarks.md          # Work-related bookmarks and project links
 ├── identity/                       # Personal identity and profile information
 │   └── personal-info.md           # Personal information (PAN, family details)
+├── personal/                       # Personal life, habits, and reminders
+│   └── reminders.md               # Recurring reminders and personal tasks
+├── productivity/                   # Productivity setup, shortcuts, and workflows
+│   └── keyboard-shortcuts.md      # Centralized keyboard shortcuts for all applications
 ├── where-is-my-stuff/             # Location tracking and item organization
 └── work-contribution/             # Work contributions and achievements
     └── overview.md                # Summary of work contributions and career milestones
@@ -80,7 +84,7 @@ Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 ## Content Overview
 
 ### bookmarks
-**What's Here**: Saved links, articles, resources
+**What's Here**: Saved links, articles, and resources
 **Purpose**: Collection of useful web resources and references
 **Files**:
 - `tools-bookmarks.md` - Tools and productivity applications (Obsidian)
@@ -90,7 +94,19 @@ Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 **What's Here**: Personal identity information, profiles, documentation
 **Purpose**: Personal information and identity management
 **Files**:
-- `personal-info.md` - Official documents (PAN, Passport) and family information (spouse name)
+- `personal-info.md` - Official documents (PAN, Passport) and family information (spouse name, passport)
+
+### personal
+**What's Here**: Personal life management, habits, and recurring reminders
+**Purpose**: Track personal routines, home maintenance, and regular tasks
+**Files**:
+- `reminders.md` - Recurring reminders and personal tasks (plant watering, etc.)
+
+### productivity
+**What's Here**: Productivity setup, keyboard shortcuts, workflows, and automation
+**Purpose**: Centralized productivity tools configuration and efficiency optimizations
+**Files**:
+- `keyboard-shortcuts.md` - Centralized keyboard shortcuts for all applications (Todoist)
 
 ### where-is-my-stuff
 **What's Here**: Item locations, organization system
@@ -100,13 +116,13 @@ Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 **What's Here**: Work contributions, achievements, and career milestones
 **Purpose**: Track professional accomplishments, project impacts, and career documentation for performance reviews and portfolio building
 **Files**:
-- `overview.md` - Template and guidelines for documenting work contributions
+- `overview.md` - Documented work contributions including AZA Tools design input
 
 ## Summary Statistics
 
-- **Last Updated**: February 11, 2026 8:21 PM
-- **Total Folders**: 4
-- **Total Files**: 5 (inbox.md + 4 content files)
+- **Last Updated**: February 17, 2026 5:57 PM
+- **Total Folders**: 6
+- **Total Files**: 7 (inbox.md + 6 content files)
 - **Inbox Status**: ✅ Empty (all items processed)
 - **Organization**: Currently flat structure (0-1 levels), can grow to 3-5 levels as needed
 
