@@ -41,7 +41,7 @@ For each inbox item:
    - Identify where similar content lives
 
 3. **Check Folder Rules** → Look for `memory-management-rule.md` files
-   - Read root rules: `personal-memory-mgmt-rule.md`
+   - Read root rules: `personal-memory/memory-management-rule.md`
    - Check target folder for `memory-management-rule.md`
    - Check any parent folders for rules
    - Apply most specific rules (closest to destination takes precedence)

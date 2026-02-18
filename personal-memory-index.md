@@ -70,6 +70,7 @@ Mature:      python/ → python/basics/, python/frameworks/, python/advanced/
 ```
 personal-memory/
 ├── inbox.md                                              # Unprocessed information waiting to be organized
+├── memory-management-rule.md                             # Rules and guidelines for managing notes under this folder and all subfolders
 ├── bookmarks/                                            # Bookmarks and saved links
 │   ├── tools-bookmarks.md                               # Tools and productivity application bookmarks
 │   └── work-bookmarks.md                                # Work-related bookmarks and project documents
