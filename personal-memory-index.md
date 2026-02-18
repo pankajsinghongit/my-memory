@@ -56,6 +56,13 @@ Growing:     python/ → python/basics.md, python/advanced.md
 Mature:      python/ → python/basics/, python/frameworks/, python/advanced/
 ```
 
+**Folder-Specific Rules**: Any folder can have its own `memory-management-rule.md`
+- Each folder can optionally contain a `memory-management-rule.md` file
+- Rules in this file apply to all files and subfolders within that folder
+- More specific rules (closer to the file) take precedence over general rules
+- Useful for folders with special requirements (naming, structure, content format)
+- Example: `work-contribution/memory-management-rule.md` could specify project file naming conventions
+
 ---
 
 ## Directory Structure

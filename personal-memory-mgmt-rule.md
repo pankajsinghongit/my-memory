@@ -6,6 +6,7 @@ This document contains your personal rules and guidelines for managing your know
 
 - [Organization Rules](#organization-rules)
 - [Naming Conventions](#naming-conventions)
+- [Folder-Specific Rules](#folder-specific-rules)
 - [Inbox Processing](#inbox-processing)
 - [Content Guidelines](#content-guidelines)
 - [Maintenance Schedule](#maintenance-schedule)
@@ -49,6 +50,62 @@ Define how you organize different types of information:
   python-notes.md → python/ → python/basics/, python/advanced/, python/frameworks/
   ```
   Start with a single file, create a folder when it grows, then add subfolders as needed
+
+---
+
+## Folder-Specific Rules
+
+### Overview
+Any folder in `personal-memory/` can optionally contain its own `memory-management-rule.md` file to specify rules that apply to that folder and its contents.
+
+### How It Works
+- **Scope**: Rules apply to all files and subfolders within that folder
+- **Precedence**: More specific rules (closer to the file) override general rules
+- **Hierarchy**: Root rules → Folder rules → Subfolder rules
+- **Optional**: Folders without a rule file inherit from parent folders
+
+### Rule Precedence Example
+```
+personal-memory-mgmt-rule.md (ROOT - applies to everything)
+  ↓
+personal-memory/work-contribution/memory-management-rule.md (applies to work-contribution/)
+  ↓
+personal-memory/work-contribution/projects/memory-management-rule.md (most specific)
+```
+
+If there's a contradiction, the most specific (closest) rule wins.
+
+### When to Create Folder-Specific Rules
+- Folder has **unique naming conventions** (e.g., project files with dates)
+- Folder requires **special file structure** (e.g., specific sections or templates)
+- Folder has **different content guidelines** (e.g., PII handling, work vs personal)
+- Folder needs **custom processing workflow** (e.g., different archiving rules)
+
+### Example: work-contribution/memory-management-rule.md
+```markdown
+# Work Contribution Rules
+
+## File Naming
+- Projects: `project-YYYY-MM-project-name.md` (monthly start date)
+- Yearly activities: `project-YYYY-activity-name.md` (ongoing yearly)
+
+## Required Sections
+All project files must include:
+- Project metadata (dates, status, tags)
+- Contribution entries with dates
+- Impact tracking
+
+## Processing
+- Work contributions go to work-contribution/ folder
+- Not to general inbox processing rules
+```
+
+### Creating a Folder-Specific Rule File
+1. Create `memory-management-rule.md` in the folder
+2. Document folder-specific rules clearly
+3. Reference or override root rules as needed
+4. Keep it focused on folder-specific needs
+5. Update when folder structure or needs change
 
 ---
 

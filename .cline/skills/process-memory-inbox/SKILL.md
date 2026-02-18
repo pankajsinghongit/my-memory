@@ -40,12 +40,19 @@ For each inbox item:
    - Understand current organization patterns
    - Identify where similar content lives
 
-3. **Decide Destination** → See **[Decision Guide](./docs/decision-guide.md)**
+3. **Check Folder Rules** → Look for `memory-management-rule.md` files
+   - Read root rules: `personal-memory-mgmt-rule.md`
+   - Check target folder for `memory-management-rule.md`
+   - Check any parent folders for rules
+   - Apply most specific rules (closest to destination takes precedence)
+   - Look for special naming, structure, or processing requirements
+
+4. **Decide Destination** → See **[Decision Guide](./docs/decision-guide.md)**
    - Determine target folder and file
    - Create new folder/file if needed
-   - Follow naming conventions
+   - Follow naming conventions (general + folder-specific)
 
-4. **Move Content** → Check content type:
+5. **Move Content** → Check content type:
    - **Bookmarks/URLs?** → See **[Bookmarks Guide](./docs/bookmarks.md)**
    - **Work contribution/log?** → See **[Work Contributions Guide](./docs/work-contribution.md)**
    - **Personal info?** → See **[Personal Info Guide](./docs/identity.md)**
@@ -53,22 +60,22 @@ For each inbox item:
    - Add to existing file OR create new file
    - Use proper markdown structure
 
-5. **Archive** → See **[Archiving Guide](./docs/archiving-guide.md)**
+6. **Archive** → See **[Archiving Guide](./docs/archiving-guide.md)**
    - Copy complete entry to `processed-inbox-audit/[YYYY-MM]-processed-inbox-audit.md`
    - Add processing metadata (Processed date, Moved to path)
    - Preserve original content exactly as-is
 
-6. **Remove from Inbox** → `replace_in_file: personal-memory/inbox.md`
+7. **Remove from Inbox** → `replace_in_file: personal-memory/inbox.md`
    - Delete the processed entry
    - Preserve remaining unprocessed entries
 
-7. **Update Index** (if needed) → See **[Updating Index Guide](./docs/updating-index.md)**
+8. **Update Index** (if needed) → See **[Updating Index Guide](./docs/updating-index.md)**
    - Read the entire `personal-memory-index.md` file to understand its structure
    - Make ALL appropriate changes to keep it accurate and complete
    - Review thoroughly to ensure nothing was missed
 
-8. **Continue** → Move to next item
-   - Repeat steps 1-7 for each inbox item
+9. **Continue** → Move to next item
+   - Repeat steps 1-8 for each inbox item
    - Stop when all items processed or user requests
 
 ### Final Step
