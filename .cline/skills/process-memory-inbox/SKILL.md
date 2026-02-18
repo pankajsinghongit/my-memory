@@ -40,19 +40,59 @@ For each inbox item:
    - Understand current organization patterns
    - Identify where similar content lives
 
-3. **Check Folder Rules** → Look for `memory-management-rule.md` files
-   - Read root rules: `personal-memory/memory-management-rule.md`
-   - Check target folder for `memory-management-rule.md`
-   - Check any parent folders for rules
-   - Apply most specific rules (closest to destination takes precedence)
-   - Look for special naming, structure, or processing requirements
+3. **Initial Destination Decision** → See **[Decision Guide](./docs/decision-guide.md)**
+   - Analyze the inbox item content
+   - Determine likely target folder category (e.g., work-contribution, bookmarks, personal)
+   - This is a preliminary decision to identify which folder rules to check
+   - Don't finalize file name yet - rules may affect naming conventions
 
-4. **Decide Destination** → See **[Decision Guide](./docs/decision-guide.md)**
-   - Determine target folder and file
-   - Create new folder/file if needed
-   - Follow naming conventions (general + folder-specific)
+4. **Check Folder Rules** → Systematically discover and read all applicable rules
+   
+   **Step 4a: List all rule files in hierarchy using search_files tool**
+   - Now that target folder is identified, use `search_files` to find all `memory-management-rule.md` files:
+     ```
+     search_files:
+       path: personal-memory
+       regex: memory-management-rule\.md$
+       file_pattern: memory-management-rule.md
+     ```
+   - Filter results to only include files in the hierarchy from root to target:
+     1. `personal-memory/memory-management-rule.md` (root - always exists)
+     2. `personal-memory/work-contribution/memory-management-rule.md` (if in results)
+     3. `personal-memory/work-contribution/projects/memory-management-rule.md` (if in results)
+   - Example: For target `personal-memory/work-contribution/`, only include files in paths:
+     * `personal-memory/` (root)
+     * `personal-memory/work-contribution/` (target)
+     * Exclude: `personal-memory/bookmarks/memory-management-rule.md` (different branch)
+   
+   **Step 4b: Read rules in order of precedence (lowest to highest)**
+   - Start with root: Read `personal-memory/memory-management-rule.md`
+   - Then parent folders: Read each parent folder's rules (if they exist)
+   - Finally target folder: Read target folder's rules (if exists)
+   - Build comprehensive understanding as you go:
+     * Note general rules from root
+     * Note any overrides or additions from parent folders
+     * Note most specific rules from target folder
+   
+   **Step 4c: Apply rules with correct precedence**
+   - Most specific (closest to target) rules override general rules
+   - Look for: naming conventions, file structure, required sections, processing workflows
+   - Example hierarchy:
+     ```
+     personal-memory/memory-management-rule.md           (GENERAL - applies to all)
+       ↓ can be overridden by ↓
+     personal-memory/work-contribution/memory-management-rule.md  (MORE SPECIFIC)
+       ↓ can be overridden by ↓
+     personal-memory/work-contribution/projects/memory-management-rule.md (MOST SPECIFIC)
+     ```
 
-5. **Move Content** → Check content type:
+5. **Finalize Destination** → Apply discovered rules
+   - Determine exact target folder and file
+   - Apply naming conventions from rules (general + folder-specific)
+   - Determine file structure requirements
+   - Create new folder/file if needed following rules
+
+6. **Move Content** → Check content type:
    - **Bookmarks/URLs?** → See **[Bookmarks Guide](./docs/bookmarks.md)**
    - **Work contribution/log?** → See **[Work Contributions Guide](./docs/work-contribution.md)**
    - **Personal info?** → See **[Personal Info Guide](./docs/identity.md)**
@@ -60,22 +100,22 @@ For each inbox item:
    - Add to existing file OR create new file
    - Use proper markdown structure
 
-6. **Archive** → See **[Archiving Guide](./docs/archiving-guide.md)**
+7. **Archive** → See **[Archiving Guide](./docs/archiving-guide.md)**
    - Copy complete entry to `processed-inbox-audit/[YYYY-MM]-processed-inbox-audit.md`
    - Add processing metadata (Processed date, Moved to path)
    - Preserve original content exactly as-is
 
-7. **Remove from Inbox** → `replace_in_file: personal-memory/inbox.md`
+8. **Remove from Inbox** → `replace_in_file: personal-memory/inbox.md`
    - Delete the processed entry
    - Preserve remaining unprocessed entries
 
-8. **Update Index** (if needed) → See **[Updating Index Guide](./docs/updating-index.md)**
+9. **Update Index** (if needed) → See **[Updating Index Guide](./docs/updating-index.md)**
    - Read the entire `personal-memory-index.md` file to understand its structure
    - Make ALL appropriate changes to keep it accurate and complete
    - Review thoroughly to ensure nothing was missed
 
-9. **Continue** → Move to next item
-   - Repeat steps 1-8 for each inbox item
+10. **Continue** → Move to next item
+   - Repeat steps 1-9 for each inbox item
    - Stop when all items processed or user requests
 
 ### Final Step

@@ -104,13 +104,16 @@ If the user provides multiple related pieces of information:
 The information stored in inbox.md will be processed later following this workflow:
 
 1. **Read** each item during scheduled processing session (typically Sunday evening)
-2. **Check folder rules** - Look for `memory-management-rule.md` files in target folders
+2. **Check folder rules** - Systematically discover and read all applicable rules:
+   - List all `memory-management-rule.md` files from target folder up to root
+   - Read them in order: root → parent folders → target folder
+   - Build comprehensive understanding with correct precedence (most specific wins)
 3. **Decide** where it belongs (create new file or add to existing)
-4. **Move** content to appropriate location in `personal-memory/` following any folder-specific rules
+4. **Move** content to appropriate location in `personal-memory/` following applicable rules
 5. **Archive** the entry to `processed-inbox-audit/[YYYY-MM]-processed-inbox-audit.md`
 6. **Update** `personal-memory-index.md` if new folders were created
 
-**Note**: You don't need to process the inbox immediately - just capture the information. The user will process it during their scheduled session. Folder-specific rules (like naming conventions) will be applied during processing.
+**Note**: You don't need to process the inbox immediately - just capture the information. The user will process it during their scheduled session. Folder-specific rules (like naming conventions) will be systematically discovered and applied during processing.
 
 ## Examples
 
