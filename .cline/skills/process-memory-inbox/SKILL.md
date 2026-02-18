@@ -47,12 +47,11 @@ For each inbox item:
 
 4. **Move Content** → Check content type:
    - **Bookmarks/URLs?** → See **[Bookmarks Guide](./docs/bookmarks.md)**
-   - **Work achievements?** → See **[Work Contributions Guide](./docs/work-contribution.md)**
+   - **Work contribution/log?** → See **[Work Contributions Guide](./docs/work-contribution.md)**
    - **Personal info?** → See **[Personal Info Guide](./docs/identity.md)**
    - **General content?** → See **[File Templates Guide](./docs/file-templates.md)**
    - Add to existing file OR create new file
    - Use proper markdown structure
-   - Update metadata (Last Updated date)
 
 5. **Archive** → See **[Archiving Guide](./docs/archiving-guide.md)**
    - Copy complete entry to `processed-inbox-audit/[YYYY-MM]-processed-inbox-audit.md`
@@ -90,7 +89,7 @@ For specific types of content, reference these guides:
 - **[Updating Index Guide](./docs/updating-index.md)** - How to properly update all sections of the memory index
 - **[New Folder Creation](./docs/new-folder-creation.md)** - When and how to create folders
 - **[Web Bookmarks](./docs/bookmarks.md)** - Processing URLs and documentation
-- **[Work Contributions](./docs/work-contribution.md)** - Career achievements and projects
+- **[Work Contributions](./docs/work-contribution.md)** - Work log, Career achievements and projects deliveries
 - **[Personal Info](./docs/identity.md)** - Documents, family, contacts
 - **[File Reorganization](./docs/file-reorganization.md)** - Breaking up large files
 

@@ -7,7 +7,6 @@
 The `personal-memory-index.md` serves as a complete map of your memory system. It must be kept current to:
 - Help find information quickly
 - Understand the organizational structure
-- Track growth and changes
 - Maintain an accurate overview
 
 ## How to Update the Index
@@ -17,6 +16,10 @@ The `personal-memory-index.md` serves as a complete map of your memory system. I
 1. **Read the entire `personal-memory-index.md` file** to understand its complete structure
 2. **Make ALL appropriate changes** to keep the index accurate and up-to-date
 3. **Review thoroughly** to ensure nothing was missed
+
+The index contains two main data sections:
+- **Directory Structure**: The tree view of folders and files
+- **Content Overview**: Descriptions of what each folder contains
 
 The index contains multiple sections that work together to provide a complete picture of your memory system. By reading the full file first, you'll understand what needs to be updated to maintain accuracy.
 

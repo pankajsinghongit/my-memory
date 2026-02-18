@@ -60,24 +60,23 @@ Mature:      python/ → python/basics/, python/frameworks/, python/advanced/
 
 ## Directory Structure
 
-**Last Updated**: February 18, 2026 11:50 AM
-
 ```
 personal-memory/
-├── inbox.md                        # Unprocessed information waiting to be organized
-├── bookmarks/                      # Bookmarks and saved links
-│   ├── tools-bookmarks.md         # Tools and productivity application bookmarks
-│   └── work-bookmarks.md          # Work-related bookmarks and project links
-├── identity/                       # Personal identity and profile information
-│   └── personal-info.md           # Personal information (PAN, family details)
-├── personal/                       # Personal life, habits, and reminders
-│   ├── reminders.md               # Recurring reminders and personal tasks
-│   └── travel-plans.md            # Travel intentions, plans, and trip ideas
-├── productivity/                   # Productivity setup, shortcuts, and workflows
-│   └── keyboard-shortcuts.md      # Centralized keyboard shortcuts for all applications
-├── where-is-my-stuff/             # Location tracking and item organization
-└── work-contribution/             # Work contributions and achievements
-    └── overview.md                # Summary of work contributions and career milestones
+├── inbox.md                                              # Unprocessed information waiting to be organized
+├── bookmarks/                                            # Bookmarks and saved links
+│   ├── tools-bookmarks.md                               # Tools and productivity application bookmarks
+│   └── work-bookmarks.md                                # Work-related bookmarks and project documents
+├── identity/                                             # Personal identity and profile information
+│   └── personal-info.md                                 # Personal information and official documents
+├── personal/                                             # Personal life, habits, and reminders
+│   ├── reminders.md                                     # Recurring reminders and personal tasks
+│   └── travel-plans.md                                  # Travel intentions, plans, and trip ideas
+├── productivity/                                         # Productivity setup, shortcuts, and workflows
+│   └── keyboard-shortcuts.md                            # Centralized keyboard shortcuts for all applications
+└── work-contribution/                                    # Work contributions and achievements
+    ├── overview.md                                      # Summary of work contributions and career milestones
+    ├── project-2026-02-dls-manager-approval-service.md # DLS Manager Approval Service project contributions
+    └── project-2026-interviews.md                      # Interviews conducted for hiring and recruitment (yearly)
 
 Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 ```
@@ -88,45 +87,35 @@ Note: Folders can contain subfolders as content grows (up to 3-5 levels deep)
 **What's Here**: Saved links, articles, and resources
 **Purpose**: Collection of useful web resources and references
 **Files**:
-- `tools-bookmarks.md` - Tools and productivity applications (Obsidian)
-- `work-bookmarks.md` - Work-related bookmarks including project documents (DLS Virtual Assistant PRFAQ)
+- `tools-bookmarks.md` - Tools and productivity applications (Obsidian for knowledge management)
+- `work-bookmarks.md` - Work-related bookmarks and project documents (DLS Virtual Assistant PRFAQ)
 
 ### identity
-**What's Here**: Personal identity information, profiles, documentation
-**Purpose**: Personal information and identity management
+**What's Here**: Personal identity information, profiles, and official documentation
+**Purpose**: Centralized storage for personal information and identity management
 **Files**:
-- `personal-info.md` - Official documents (PAN, Passport) and family information (spouse name, passport)
+- `personal-info.md` - Official documents (PAN, Passport numbers) and family information (spouse details)
 
 ### personal
 **What's Here**: Personal life management, habits, recurring reminders, and travel plans
 **Purpose**: Track personal routines, home maintenance, regular tasks, and travel intentions
 **Files**:
-- `reminders.md` - Recurring reminders and personal tasks (plant watering, etc.)
-- `travel-plans.md` - Travel intentions, plans, and trip ideas (Goa)
+- `reminders.md` - Recurring reminders and personal tasks (weekly plant watering with log)
+- `travel-plans.md` - Travel intentions and trip planning (Goa trip in planning)
 
 ### productivity
 **What's Here**: Productivity setup, keyboard shortcuts, workflows, and automation
 **Purpose**: Centralized productivity tools configuration and efficiency optimizations
 **Files**:
-- `keyboard-shortcuts.md` - Centralized keyboard shortcuts for all applications (Cmd+Q, Cmd+W, Todoist)
-
-### where-is-my-stuff
-**What's Here**: Item locations, organization system
-**Purpose**: Track where physical or digital items are stored
+- `keyboard-shortcuts.md` - Keyboard shortcuts for all applications (GLOBAL shortcuts, Todoist, macOS system shortcuts)
 
 ### work-contribution
 **What's Here**: Work contributions, achievements, and career milestones
-**Purpose**: Track professional accomplishments, project impacts, and career documentation for performance reviews and portfolio building
+**Purpose**: Track professional accomplishments, project impacts, and career documentation for performance reviews
 **Files**:
-- `overview.md` - Documented work contributions including AZA Tools design input
-
-## Summary Statistics
-
-- **Last Updated**: February 18, 2026 12:01 PM
-- **Total Folders**: 6
-- **Total Files**: 9 (inbox.md + 8 content files)
-- **Inbox Status**: ✅ Empty (all items processed)
-- **Organization**: Currently flat structure (0-1 levels), can grow to 3-5 levels as needed
+- `overview.md` - Miscellaneous one-off contributions with clear guidance on when to use vs dedicated project files
+- `project-2026-02-dls-manager-approval-service.md` - DLS Manager Approval Service design review (critical feedback leading to strategy change from rebuild to reuse)
+- `project-2026-interviews.md` - Yearly log of interviews conducted for hiring and recruitment with statistics tracking
 
 ---
 
