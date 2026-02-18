@@ -45,7 +45,11 @@ For each inbox item:
    - Create new folder/file if needed
    - Follow naming conventions
 
-4. **Move Content** → See **[File Templates](./docs/file-templates.md)**
+4. **Move Content** → Check content type:
+   - **Bookmarks/URLs?** → See **[Bookmarks Guide](./docs/bookmarks.md)**
+   - **Work achievements?** → See **[Work Contributions Guide](./docs/work-contribution.md)**
+   - **Personal info?** → See **[Personal Info Guide](./docs/identity.md)**
+   - **General content?** → See **[File Templates Guide](./docs/file-templates.md)**
    - Add to existing file OR create new file
    - Use proper markdown structure
    - Update metadata (Last Updated date)
@@ -59,9 +63,10 @@ For each inbox item:
    - Delete the processed entry
    - Preserve remaining unprocessed entries
 
-7. **Update Index** (if needed) → `replace_in_file: personal-memory-index.md`
-   - Update if you created new folder/significant files
-   - Update directory structure and content overview
+7. **Update Index** (if needed) → See **[Updating Index Guide](./docs/updating-index.md)**
+   - Read the entire `personal-memory-index.md` file to understand its structure
+   - Make ALL appropriate changes to keep it accurate and complete
+   - Review thoroughly to ensure nothing was missed
 
 8. **Continue** → Move to next item
    - Repeat steps 1-7 for each inbox item
@@ -82,6 +87,7 @@ For specific types of content, reference these guides:
 - **[Decision Guide](./docs/decision-guide.md)** - How to categorize and decide destinations
 - **[File Templates](./docs/file-templates.md)** - Proper file structure and formatting
 - **[Archiving Guide](./docs/archiving-guide.md)** - Complete archiving process
+- **[Updating Index Guide](./docs/updating-index.md)** - How to properly update all sections of the memory index
 - **[New Folder Creation](./docs/new-folder-creation.md)** - When and how to create folders
 - **[Web Bookmarks](./docs/bookmarks.md)** - Processing URLs and documentation
 - **[Work Contributions](./docs/work-contribution.md)** - Career achievements and projects

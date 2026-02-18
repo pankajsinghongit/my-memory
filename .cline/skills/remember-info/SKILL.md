@@ -52,15 +52,14 @@ Source: [URL or reference if applicable]
 - Time is in 24-hour format
 
 **Title Guidelines:**
-- Keep it descriptive and searchable
-- Summarize what the information is about
+- Short title from the user input to keep it searchable
 - Use title case or sentence case consistently
 
 **Content Guidelines:**
-- Include all relevant details provided by the user
-- Add context if needed for future reference
+- **CRITICAL**: Keep the EXACT information provided by the user. DO NOT enhance, expand, or rewrite the content.
+- Only fix obvious typos if needed
 - Include source URLs or references when applicable
-- Use proper markdown formatting
+- Preserve the user's original wording, style, and format
 
 ### 3. Add Entry to Inbox
 Append the new entry to `personal-memory/inbox.md` using replace_in_file.

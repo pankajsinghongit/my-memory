@@ -85,3 +85,69 @@ Watered plants today.
 Todoist application shortcut on Mac: `Cmd + Q`
 
 This opens/shows the Todoist application window.
+
+## [2026-02-18 01:22] Rectangle App Terminal Commands Reference
+**Processed**: 2026-02-18 01:25
+**Moved to**: personal-memory/productivity/rectangle-config.md
+
+Comprehensive guide for Rectangle window management app terminal commands. Rectangle allows configuring hidden preferences and advanced features via command line.
+
+**Key Features Available via Terminal:**
+- Keyboard shortcut customization (using key codes and modifier flags)
+- Adjust behavior on repeated commands (cycle displays, halves to thirds, etc.)
+- Resize on directional move
+- Almost Maximize customization (default 90% of screen)
+- Add extra commands: ninths, eighths, thirds, centering, tiling, cascading
+- Doubling/halving window sizing commands
+- Footprint display customization (drag-to-snap visual feedback)
+- Make Smaller/Make Larger increments and limits
+- Window gaps and screen edge gaps
+- Snap area margins and ignored snap areas
+- Enabling sixths snap areas
+- Move cursor with window
+- Mission Control dragging behavior
+- Double-click title bar customization
+- Display ordering for multi-monitor setups
+
+**Common Command Pattern:**
+```bash
+defaults write com.knollsoft.Rectangle <preference-key> -<type> <value>
+```
+
+**Note:** For Rectangle Pro, replace `com.knollsoft.Rectangle` with `com.knollsoft.Hookshot`
+
+All commands require app restart to take effect. Includes modifier key values (cmd: 1048576, option: 524288, ctrl: 262144, shift: 131072, fn: 8388608).
+
+Source: https://github.com/rxhanson/Rectangle/blob/main/TerminalCommands.md
+
+## [2026-02-18 01:42] Rectangle Terminal Commands for Window Management
+**Processed**: 2026-02-18 01:44
+**Moved to**: personal-memory/bookmarks/tools-bookmarks.md
+
+Rectangle terminal commands for window management
+
+Source: https://github.com/rxhanson/Rectangle/blob/main/TerminalCommands.md
+
+## [2026-02-18 02:01] Travel Plan - Goa
+**Processed**: 2026-02-18 02:03
+**Moved to**: personal-memory/personal/travel-plans.md
+
+i want to go to goa
+
+## [2026-02-18 11:42] Keyboard Shortcut - Quit Application
+**Processed**: 2026-02-18 11:43
+**Moved to**: personal-memory/productivity/keyboard-shortcuts.md
+
+Cmd+Q to quit the application
+
+## [2026-02-18 11:49] Keyboard Shortcut - Cmd+W
+**Processed**: 2026-02-18 11:50
+**Moved to**: personal-memory/productivity/keyboard-shortcuts.md
+
+Cmd w closes the window
+
+## [2026-02-18 11:59] Todoist Keyboard Shortcut
+**Processed**: 2026-02-18 12:00
+**Moved to**: personal-memory/productivity/keyboard-shortcuts.md
+
+open show todist shortcut is now cmd+shift+ctrl+option T which is configured in todist app itself

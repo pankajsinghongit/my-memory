@@ -1,110 +1,140 @@
-# Processing Work Contributions and Achievements
+# Processing Work Contributions - Daily Work Log
 
-**When to use**: Project accomplishments, performance highlights, career milestones, work achievements, or basic work log
+**When to use**: Day-to-day work log - any work done on projects, tasks, or initiatives
+
+**Purpose**: Capture daily work meaningfully so it can be aggregated later to create a holistic view of contributions at year-end, performance reviews, or project completion.
 
 ## Storage Location
-- `personal-memory/work-contribution/overview.md` - For smaller achievements and when starting
-- `personal-memory/work-contribution/[project-name].md` - For major projects
-- `personal-memory/work-contribution/[YYYY-QQ]-contributions.md` - For quarterly summaries
+- `personal-memory/work-contribution/overview.md` - For daily work logs when starting or for general work
+- `personal-memory/work-contribution/[project-name].md` - For work specific to a major project
+- `personal-memory/work-contribution/[project-name]/[sub-project].md` - For work on sub-projects
+- `personal-memory/work-contribution/[YYYY-QQ]-contributions.md` - Optional: For quarterly organization
 
 ## How to Process
 
 1. **Read the inbox entry** to identify:
-   - What was accomplished?
-   - What was the impact?
-   - What technologies/skills were used?
-   - Is this a major project or a smaller achievement?
+   - What work was done?
+   - Which project/initiative?
+   - Who was involved?
+   - What was the contribution level (Critical/Small/Medium)?
+   - What document/artifact was worked on?
 
-2. **Decide the destination**:
-   - **overview.md**: Smaller achievements, quick updates, or when just starting
-   - **Separate file**: Major projects with significant contributions
-   - **Quarterly file**: Regular updates grouped by time period
+2. **Important Processing Rules**:
+   - **Capture as provided**: Store work contributions exactly as provided by the user
+   - **Handle missing information**: If any information is missing (person, contribution level, document link, etc.), capture it as "MISSING" rather than skipping the field
+   - **Fix typos**: Correct any typos or sentence formation issues observed in the user's input
+   - **Sub-projects**: If a project has sub-projects, create a folder for the main project and separate files for each sub-project
 
-3. **Follow the template format**:
+3. **Decide the destination**:
+   - **overview.md**: General daily work or when just starting
+   - **[project-name].md**: Work specific to a particular project
+   - **[project-name]/[sub-project].md**: Work on specific sub-projects within a larger project
+   - **Quarterly file**: Optional - if organizing by time period
+
+4. **Follow the simple daily log template**:
 
 ```markdown
-### [Project/Achievement Name] - [Time Period]
+## [Date] - [Brief Work Description]
 
-**Role**: [Your role]
-**Duration**: [Start Date] - [End Date] or [Date]
+**Project**: [Project Name]
+**Person(s) Involved**: [Name(s)] or MISSING
+**Contribution Level**: [Critical/Small/Medium] or MISSING
+**Document/Link**: [Link to doc/PR/ticket/code] or MISSING
 
-**Description**:
-Brief overview of what you worked on and accomplished.
+**Work Done**:
+[Capture the work exactly as provided by user - what was done today]
 
-**Key Contributions**:
-- Contribution 1
-- Contribution 2
-- Contribution 3
-
-**Impact**:
-- Measurable impact or outcome
-- Benefits to team/company/users
-
-**Technologies/Skills**:
-- Technology 1
-- Skill 2
-- Methodology 3
-
-**Metrics/Results** (if applicable):
-- 50% improvement in X
-- Reduced Y by 30%
-- Launched feature to Z users
+**Additional Notes** (optional):
+- Any relevant context
+- Technologies used
+- Related items
 ```
 
-## Example
+## Example 1: Simple Daily Work Log
 
 **Inbox Entry:**
 ```markdown
-## [2026-02-11 14:30] Launched Memory Management System
+## [2026-02-18] Fixed bug in payment service
 
-Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
+Fixed the timeout issue in payment processing. The bug was causing transactions to fail after 30 seconds. Updated the timeout configuration and added retry logic.
 
-**Impact**: Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information.
+Person: John Doe
+Contribution: Small
+PR: https://github.com/company/payment-service/pull/234
+```
 
-**Technologies**: Markdown, Git, MCP Skills, Cline AI
+**Result in work-contribution/payment-platform.md:**
+```markdown
+## 2026-02-18 - Fixed timeout issue in payment processing
+
+**Project**: Payment Platform
+**Person(s) Involved**: John Doe
+**Contribution Level**: Small
+**Document/Link**: https://github.com/company/payment-service/pull/234
+
+**Work Done**:
+Fixed the timeout issue in payment processing. The bug was causing transactions to fail after 30 seconds. Updated the timeout configuration and added retry logic.
+```
+
+## Example 2: Critical Work with Missing Info
+
+**Inbox Entry:**
+```markdown
+## [2026-02-18] Led design review for new analytics dashboard
+
+Led the technical design review for the new analytics dashboard. Reviewed architecture proposals from 3 teams, identified scalability concerns, and recommended solutions. Meeting doc has all the details.
 ```
 
 **Result in work-contribution/overview.md:**
 ```markdown
-### Memory Management System - February 2026
+## 2026-02-18 - Led design review for new analytics dashboard
 
-**Role**: Designer & Implementer
-**Duration**: 2026-02-11
+**Project**: Analytics Platform
+**Person(s) Involved**: MISSING
+**Contribution Level**: Critical
+**Document/Link**: MISSING
 
-**Description**:
-Successfully designed and implemented a personal memory management system with inbox processing workflow. The system includes automated skills for organizing information, complete audit trails, and flexible multi-level folder organization.
-
-**Key Contributions**:
-- Designed complete inbox processing workflow
-- Implemented automated organization system
-- Created comprehensive audit trail mechanism
-- Built flexible multi-level folder structure
-
-**Impact**:
-- Improved personal knowledge organization efficiency by enabling structured capture and retrieval of information
-
-**Technologies/Skills**:
-- Markdown
-- Git
-- MCP Skills
-- Cline AI
+**Work Done**:
+Led the technical design review for the new analytics dashboard. Reviewed architecture proposals from 3 teams, identified scalability concerns, and recommended solutions. Meeting doc has all the details.
 ```
 
-## When to Create Separate Files
+## Organization Strategy
 
-Create a new file (`project-name.md`) when:
-- Major projects with significant contributions (2+ weeks of work)
-- Complex initiatives that warrant detailed documentation
-- Projects you'll reference frequently for portfolio/resume
+**Use overview.md** for:
+- General daily work that doesn't belong to a specific project
+- When you're just starting and haven't established project files yet
 
-Create quarterly files (`2026-q1-contributions.md`) when:
-- You want to group multiple smaller achievements by time period
-- Preparing for performance reviews
-- Building a timeline of contributions
+**Create [project-name].md** when:
+- You accumulate several work logs for the same project
+- You want to track work on a specific initiative separately
 
-## Tips
-- Link to related work bookmarks if applicable
-- Include measurable metrics when available
-- Keep descriptions concise but comprehensive
-- Update the "Last Updated" date when adding new contributions
-- Consider organizing by project, time period, or impact area
+**Create [project-name]/ folder** when:
+- A project has distinct sub-projects or components
+- Each sub-project needs separate tracking
+- Example structure:
+  ```
+  personal-memory/work-contribution/
+    ├── overview.md (general work)
+    ├── payment-platform.md (dedicated project)
+    └── analytics-platform/
+        ├── data-pipeline.md (sub-project)
+        ├── dashboard-ui.md (sub-project)
+        └── reporting-api.md (sub-project)
+  ```
+
+**Optional quarterly files** (`2026-q1-contributions.md`):
+- Use if you prefer time-based organization
+- Helpful for performance review preparation
+
+## Tips for Daily Logging
+- **Keep it simple** - this is a daily work log, not a detailed achievement writeup
+- **Be consistent** - log work regularly so you have a complete record
+- **Capture as provided** - store exactly what the user says they did
+- **Always track person** - critical for team recognition when reviewing contributions later
+- **Always track contribution level** - helps understand impact when aggregating (Critical/Small/Medium)
+- **Always include links** - work typically involves docs, PRs, tickets, code - capture the link
+- **Use MISSING** - if info isn't provided, mark as "MISSING" rather than omitting the field
+- **Fix typos** - improve clarity while keeping the user's original meaning
+- **Think ahead** - these logs will be used to create holistic contribution views at year-end or project completion
+- **Organize by project** - when you have multiple logs for the same project, create a dedicated file
+- **Use folders for complex projects** - if sub-projects exist, break them into separate files
